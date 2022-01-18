@@ -1,15 +1,13 @@
 import './index.css';
+import { Link } from 'react-router-dom';
 
 function NavBar() {
 	return (
-		<div class="topnav">
-			<a class="active" href="#home">
-				Home
-			</a>
-			<a href="#about">About</a>
-			<a href="#contact">Contact</a>
-			<div class="search-container">
-				<form onSubmit="/action_page.php">
+		<div className="topnav">
+			<Link to="/">Home</Link>
+
+			<div className="search-container">
+				<form>
 					<input type="text" placeholder="Search.." name="search" />
 					<button type="submit">Submit</button>
 				</form>

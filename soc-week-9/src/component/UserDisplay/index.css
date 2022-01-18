@@ -1,0 +1,9 @@
+.row-container {
+	display: flex;
+	direction: column;
+}
+
+.row {
+	padding: 50px;
+	border: 1px solid black;
+}

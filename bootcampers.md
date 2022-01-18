@@ -20,6 +20,12 @@ Aim to have a complete project with full basic functionality.
 All results displaying.
 Extra feature - login page.
 
+Complete the CSS for the second page and add the button to go back home. <<<
+work out how to do a pie chart (and back up plan)
+link the range input - find out how to get the data
+find out how to display percentages from our workshop quiz. 
+
+
 
 How client can feed data into database
 Searching for pages based on week or topic.
