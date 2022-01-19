@@ -2,17 +2,18 @@ import React, {useEffect, useState} from 'react';
 import './index.css';
 import logo from './SOClogo.png';
 import { Link } from 'react-router-dom';
+import { connectionString } from '../../config';
 
 function SearchForm({onSubmitClick}) {
 	const [range, setRange] = useState(0);
 	const [post, setPost] = useState("");
 	const [work, setWork] = useState("");
 
-	console.log(post)
+
 
 	useEffect(() => {
 	  async function getApi(){
-		  const response = await fetch("https://soc-app-17.herokuapp.com/users",
+		  const response = await fetch(connectionString + "users",
 		  {
 			  method: "POST",
 			  mode: "no-cors",
@@ -21,10 +22,14 @@ function SearchForm({onSubmitClick}) {
 			  },
 
 			  body: JSON.stringify({name:"Sam", comments: "testing"})
+			 
 		  }
-		
 		  );
-		 console.log(response);
+		  const data = await response.json();
+		  console.log(data);
+		
+		
+		
 
 	  }
 	  getApi()
@@ -37,13 +42,13 @@ function SearchForm({onSubmitClick}) {
 function formSubmit(e){
 e.preventDefault();
 
-onSubmitClick();
+onSubmitClick(range,post,work);
 setRange(0);
 setWork("");
 setPost("");
 }
 
-	
+	console.log(post);
 
 	return (
 		<div className="container">
