@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Josefin+Sans:wght@200&display=swap');
+
+.container {
+	height: 100vh;
+	width: 100vw;
+	padding: 50px;
+	text-align: center;
+	font-family: 'Amatic SC', cursive;
+	font-size: 30px;
+}
+
+h3 {
+	font-size: 50px;
+}
+
+h4 {
+	font-family: 'Josefin Sans';
+}
+
+.form-container {
+	padding: 30px;
+	border: 1px solid black;
+}
+
+.form-box {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-content: space-between;
+	padding: 30px;
+}
+
+.emoji-meter {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.button-choices {
+	flex-direction: row;
+	display: flex;
+	justify-content: center;
+}
