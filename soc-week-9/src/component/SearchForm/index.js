@@ -15,7 +15,7 @@ function SearchForm() {
 			<form className="form-container">
 				<div className="form-box">
 					<label>How are you feeling today?</label>
-					<input type="range" min="0" max="5" />
+					<input type="range" min="0" max="6" />
 					<div className="emoji-meter">
 						<option value="0">😟</option>
 						<option value="3">😐</option>
