@@ -9,7 +9,7 @@ function SearchForm() {
 			<img src={logo} alt="school of code logo" style={{ width: '200px', height: '200px' }} />
 			<h3>Welcome Bootcamper! </h3>
 			<h4>
-				You are not alone... we know you might be feeling the pressure. Here is a place to relate to your fellow
+				You are not alone... we know you might be feeling the pressure! Here is a place to relate to your fellow
 				bootcampers
 			</h4>
 			<form className="form-container">
