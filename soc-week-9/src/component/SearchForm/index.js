@@ -1,9 +1,49 @@
-import React from 'react';
+import React, {useEffect, useState} from 'react';
 import './index.css';
 import logo from './SOClogo.png';
 import { Link } from 'react-router-dom';
 
-function SearchForm() {
+function SearchForm({onSubmitClick}) {
+	const [range, setRange] = useState(0);
+	const [post, setPost] = useState("");
+	const [work, setWork] = useState("");
+
+	console.log(post)
+
+	useEffect(() => {
+	  async function getApi(){
+		  const response = await fetch("/users",
+		  {
+			  method: "POST",
+			  headers:{
+				  'Content-type': "application/json"
+			  },
+
+			  body: JSON.stringify({name:"Sam", comments: "testing"})
+		  }
+		
+		  );
+		 console.log(response);
+
+	  }
+	  getApi()
+
+	 
+	}, []);
+	
+	
+
+function formSubmit(e){
+e.preventDefault();
+
+onSubmitClick();
+setRange(0);
+setWork("");
+setPost("");
+}
+
+	
+
 	return (
 		<div className="container">
 			<img src={logo} alt="school of code logo" style={{ width: '200px', height: '200px' }} />
@@ -12,19 +52,19 @@ function SearchForm() {
 				You are not alone... we know you might be feeling the pressure. Here is a place to relate to your fellow
 				bootcampers
 			</h4>
-			<form className="form-container">
+			<form onSubmit={formSubmit} className="form-container">
 				<div className="form-box">
 					<label>How are you feeling today?</label>
-					<input type="range" min="0" max="6" />
+					<input onChange={e=> setRange(parseInt(e.target.value))} type="range" min="0" max="2" />
 					<div className="emoji-meter">
 						<option value="0">😟</option>
-						<option value="3">😐</option>
-						<option value="5">😀</option>
+						<option value="1">😐</option>
+						<option value="2">😀</option>
 					</div>
 				</div>
 				<div className="form-box">
 					<label> Write to inspire or reflect...</label>
-					<input type="text" placeholder="daily-reflection" />
+					<input onChange={e=> setPost(e.target.value)} type="text" placeholder="daily-reflection" />
 				</div>
 				<div className="form-box">
 					<label> How did you find today's workshop?</label>
@@ -38,7 +78,7 @@ function SearchForm() {
 				</div>
 				<div className="form-box">
 					<label>Share Your Work</label>
-					<input
+					<input onChange={e=> setWork(e.target.value)}
 						style={{
 							textAlign: 'center',
 							margin: 'auto'
