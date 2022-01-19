@@ -12,9 +12,10 @@ function SearchForm({onSubmitClick}) {
 
 	useEffect(() => {
 	  async function getApi(){
-		  const response = await fetch("/users",
+		  const response = await fetch("https://soc-app-17.herokuapp.com/users",
 		  {
 			  method: "POST",
+			  mode: "no-cors",
 			  headers:{
 				  'Content-type': "application/json"
 			  },
