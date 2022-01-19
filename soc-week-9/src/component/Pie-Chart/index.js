@@ -1,8 +1,12 @@
-import React from 'react';
-// import { Doughnut } from 'react-chartjs-2';
-
-function PieChart() {
-	return <div>This is where the pie chart will go</div>;
+import DoughnutChart from "../doughnut/";
+function App() {
+    return (
+        <div className="App">
+            <div className="container" style={{width : "200px"}}>
+                <DoughnutChart />
+            </div>
+        </div>
+    );
 }
 
-export default PieChart;
+export default App;

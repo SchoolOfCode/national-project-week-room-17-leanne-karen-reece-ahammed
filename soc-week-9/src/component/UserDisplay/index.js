@@ -14,8 +14,7 @@ import './index.css';
 
 function UserDisplay(props) {
 	return (
-		<div>
-			<div className="row-container">
+		<div className="primary-container">
 				<div className="row">
 					<PieChart />
 				</div>
@@ -24,12 +23,11 @@ function UserDisplay(props) {
 				</div>
 				<div className="row">
 					<WorkshopResults />
-				</div>
 			</div>
 
 			<div className="two-columns">
-				<ShareYourWork />
 				<DailyReflection />
+				<ShareYourWork />
 			</div>
 		</div>
 	);
