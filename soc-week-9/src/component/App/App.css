@@ -13,3 +13,15 @@
 	line-height: 75px;
 	font-size: 30px;
 }
+
+body {
+	background-color: #DBFCFF;
+}
+
+li {
+	font-family: 'Josefin Sans';
+	font-size: 30px;
+	list-style: none;
+	padding: 10px;
+	
+}

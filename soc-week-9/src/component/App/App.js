@@ -51,10 +51,10 @@ function App() {
 				element={
 					<div>
 
-						<NavBar />
-						<UserDisplay reflect={reflect} sharedWork={sharedWork}/>
-						<h5 onClick={getReflection}>GET REFLECTion</h5>
+						<NavBar /><h5 onClick={getReflection}>GET REFLECTion</h5>
 						<h5 onClick={getWork}>GET THE WORK</h5>
+						<UserDisplay reflect={reflect} sharedWork={sharedWork}/>
+						
 					</div>
 				}
 			/>
