@@ -1,12 +1,15 @@
 import React from 'react';
 import "./index.css";
-
-function ShareYourWork(props) {
+import SharedItem from "../SharedItem"
+function ShareYourWork({sharedWork}) {
+console.log(sharedWork + "Tthi is work")
 	return	<div className="outerbox">
-	 <div className="share">Share Your Work Results
+	 <div className="share">Share your work(?)
 	</div>
-	<div className="comments"><ul>Comments go here</ul></div>
-	</div>;
-}
 
+	{sharedWork.map((item, key)=>{
+		return <SharedItem sharedWork={item}/>
+	})}
+	</div>
+}
 export default ShareYourWork;

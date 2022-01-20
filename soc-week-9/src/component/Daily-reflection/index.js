@@ -1,11 +1,21 @@
 import React from 'react';
-import "./index.css"
-function DailyReflection(props) {
+import "./index.css";
+import DisplayItem from "../DisplayItem"
+
+
+
+function DailyReflection({reflect}) {
+	console.log(reflect);
+	//daily reflection
+	//["sdsds", "sdsdsd", "sdsd"]
+
 	return	<div className="outerbox_2">
-	 <div className="share_2">Share Your Work Results
+	 <div className="share_2">Daily Reflection
 	</div>
-	<div className="comments_2"><ul>Comments go here</ul></div>
-	</div>;
+	{reflect.map((item, key)=>{
+		return <DisplayItem reflect={item}/>
+	})}
+	</div>
 }
 
 export default DailyReflection;

@@ -5,14 +5,13 @@ import WorkshopResults from '../WorkshopResults';
 import DailyReflection from '../Daily-reflection';
 import ShareYourWork from '../Share-your-work';
 import './index.css';
-
 // This page will contain all components to be displayed on the results page.
 // The UserDisplay will be imported into the main App.
 // This will help with styling & layout of the components.
 
 //The data from the search form will be pulled into this page and then passed to child elements as props to be displayed.
 
-function UserDisplay(props) {
+function UserDisplay({reflect, sharedWork}) {
 	return (
 		<div className="primary-container">
 				<div className="row">
@@ -26,8 +25,8 @@ function UserDisplay(props) {
 			</div>
 
 			<div className="two-columns">
-				<DailyReflection />
-				<ShareYourWork />
+				<DailyReflection reflect={reflect}/>
+				<ShareYourWork sharedWork={sharedWork}/>
 			</div>
 		</div>
 	);
