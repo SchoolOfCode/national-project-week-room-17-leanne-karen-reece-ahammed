@@ -3,6 +3,7 @@ import "chart.js/auto";
 import "./index.css"
 function DoughnutChart({happinessData}) {
     console.log(happinessData)
+function DoughnutChart() {
     const data = {
         labels: [ ":😓:", "😐", "😀"],
         datasets: [

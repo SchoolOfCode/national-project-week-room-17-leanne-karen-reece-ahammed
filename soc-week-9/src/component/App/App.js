@@ -7,6 +7,7 @@ import {useState} from "react";
 
 function App() {
 
+
 	const [reflect, setReflect] = useState([]);
 	const [sharedWork, setSharedWork] = useState([]);
 
@@ -37,34 +38,10 @@ function App() {
 
 	}
 
-	async function getApi() {
-		const response = await fetch('https://soc-app-17.herokuapp.com/users');
-		const data = await response.json();
-		console.log(data);
-	}
-
-
-async function postApi() {
-	const response = await fetch('https://soc-app-17.herokuapp.com/users', {
-		method: 'POST',
-		mode: 'no-cors',
-		headers: {
-			'Content-type': 'application/json'
-		},
-
-		body: JSON.stringify()
-	});
-	const data = await response.json();
-	console.log(data);
 
 }
-	function handleClick(e) {
-		e.preventDefault();
-		getApi();
-		postApi();
 
 	}
-
 
 	return (
 		<Routes>
@@ -73,7 +50,11 @@ async function postApi() {
 				element={
 					<div>
 						<NavBar />
+
 						<SearchForm  handleClick={handleClick} />
+
+						<SearchForm />
+
 					</div>
 				}
 			/>
