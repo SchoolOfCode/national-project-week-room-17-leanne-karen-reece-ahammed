@@ -1,20 +1,19 @@
 import { Doughnut } from "react-chartjs-2";
 import "chart.js/auto";
 import "./index.css"
-function DoughnutChart() {
+export default function DoughnutChart({happinessData}) {
+    console.log(happinessData)
     const data = {
-        labels: [ ":grinning:", "Tue", "Wed", "Thurs", "Fri" ],
+        labels: [ ":😓:", "😐", "😀"],
         datasets: [
             {
-                label: "Attendance for Week 1",
-                data: [ 25, 24, 25, 25, 3 ],
+                label: "Happiness",
+                data: happinessData,
                 borderColor: [ "rgba(255,206,86,0.2)" ],
                 backgroundColor: [
-                    "rgba(232,99,132,1)",
-                    "rgba(232,211,6,1)",
-                    "rgba(54,162,235,1)",
-                    "rgba(255,159,64,1)",
-                    "rgba(153,102,255,1)"
+                    "rgba(255,0,0,1)",
+                    "rgba(251,201,98,1)",
+                    "rgba(128,255,0,1)",
                 ],
                 pointBackgroundColor: "rgba(255,206,86,0.2)"
             }
@@ -24,8 +23,8 @@ function DoughnutChart() {
         plugins: {
             title: {
                 display: true,
-                text: "Doughnut Chart",
-                color: "blue",
+                text: "Happy Doughnut",
+                color: "black",
                 font: {
                     size: 30
                 },
@@ -46,4 +45,3 @@ function DoughnutChart() {
         </div>
     );
 }
-export default DoughnutChart;
