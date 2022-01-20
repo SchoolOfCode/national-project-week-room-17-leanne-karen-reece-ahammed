@@ -1,9 +1,8 @@
 import { Doughnut } from "react-chartjs-2";
 import "chart.js/auto";
 import "./index.css"
-function DoughnutChart({happinessData}) {
+export default function DoughnutChart({happinessData}) {
     console.log(happinessData)
-function DoughnutChart() {
     const data = {
         labels: [ ":😓:", "😐", "😀"],
         datasets: [
@@ -46,4 +45,3 @@ function DoughnutChart() {
         </div>
     );
 }
-export default DoughnutChart;

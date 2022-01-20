@@ -11,8 +11,6 @@ function App() {
 	const [reflect, setReflect] = useState([]);
 	const [sharedWork, setSharedWork] = useState([]);
 
-
-
 	async function getWork(){
 		const response = await fetch("https://soc-app-17.herokuapp.com/users")
 		const data = await response.json()
@@ -37,12 +35,6 @@ function App() {
 		setReflect(arr);
 
 	}
-
-
-}
-
-	}
-
 	return (
 		<Routes>
 			<Route
@@ -50,11 +42,7 @@ function App() {
 				element={
 					<div>
 						<NavBar />
-
-						<SearchForm  handleClick={handleClick} />
-
 						<SearchForm />
-
 					</div>
 				}
 			/>
@@ -73,5 +61,4 @@ function App() {
 		</Routes>
 	);
 }
-
 export default App;
