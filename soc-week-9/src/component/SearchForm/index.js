@@ -77,7 +77,7 @@ function SearchForm() {
         </div>
         <div className="form-box">
           <label> Write to inspire or reflect...</label>
-          <input
+          <textarea
             onChange={(e) => setReflection(e.target.value)}
             type="text"
             placeholder="daily-reflection"
@@ -99,12 +99,9 @@ function SearchForm() {
         </div>
         <div className="form-box">
           <label>Share Your Work</label>
-          <input
+          <input 
             onChange={(e) => setUrl(e.target.value)}
-            style={{
-              textAlign: "center",
-              margin: "auto",
-            }}
+           
             type="text"
             value={url}
           />
@@ -114,11 +111,12 @@ function SearchForm() {
             type="text"
           /> */}
         </div>
-        <button type="submit">Submit</button>
+        <button className="submit-btn" type="submit">Submit</button>
       </form>
+	  <hr/>
       <div>
         <Link to="/UserDisplay">
-          <button>See results</button>
+          <button className="btn-link">See results</button>
         </Link>
       </div>
     </div>

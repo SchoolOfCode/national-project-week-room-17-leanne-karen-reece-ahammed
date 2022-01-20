@@ -19,7 +19,7 @@ h4 {
 
 .form-container {
 	padding: 30px;
-	border: 1px solid black;
+	border: none;
 }
 
 .form-box {
@@ -40,4 +40,30 @@ h4 {
 	flex-direction: row;
 	display: flex;
 	justify-content: center;
+}
+
+textarea{
+	resize: none;
+
+}
+
+input, textarea, select{
+	border-radius: 10px;
+}
+
+.submit-btn{
+	padding: 10px;
+	width: 100px;
+	border-radius: 10px;
+	background-color: #B5dfca;
+	text-decoration: black;
+}
+
+.btn-link{
+	padding: 10px;
+	width: 100px;
+	border-radius: 10px;
+	background-color: #ad9baa;
+	text-decoration: black;
+	margin-bottom: 10px;
 }
