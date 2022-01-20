@@ -1,0 +1,17 @@
+.share_2 {
+    border: 5px black solid;
+    margin : 20px;
+    background-color : green
+    }
+
+    .outerbox_2{
+        background-color: rgb(23, 204, 113);
+        width: 50%;
+        /*
+        The height needs to be changed to ensure that
+        the size doenst change on different resolutions.
+        Maybe try and get % to work(?)
+        */
+        height : 500px;
+        margin : 30px
+    }
