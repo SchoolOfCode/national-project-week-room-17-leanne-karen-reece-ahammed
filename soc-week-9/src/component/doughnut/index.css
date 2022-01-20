@@ -1,4 +1,7 @@
 .doughnut{
     width: 600px;
     height: 600px;
+    justify-content: center;
+    border: 5px #00CECB solid;
+    
 }

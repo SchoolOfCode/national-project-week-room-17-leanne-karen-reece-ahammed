@@ -54,6 +54,7 @@ function SearchForm() {
         alt="school of code logo"
         style={{ width: "200px", height: "200px" }}
       />
+	  <div className="border">
       <h3>Welcome Bootcamper! </h3>
       <h4>
         You are not alone... we know you might be feeling the pressure. Here is
@@ -78,9 +79,9 @@ function SearchForm() {
         <div className="form-box">
           <label> Write to inspire or reflect...</label>
           <textarea
-            onChange={(e) => setReflection(e.target.value)}
+            className="box-height" onChange={(e) => setReflection(e.target.value)}
             type="text"
-            placeholder="daily-reflection"
+            placeholder="Daily-Reflection"
             value={reflection}
           />
         </div>
@@ -100,7 +101,7 @@ function SearchForm() {
         <div className="form-box">
           <label>Share Your Work</label>
           <input 
-            onChange={(e) => setUrl(e.target.value)}
+            className="box-height" onChange={(e) => setUrl(e.target.value)}
            
             type="text"
             value={url}
@@ -113,13 +114,15 @@ function SearchForm() {
         </div>
         <button className="submit-btn" type="submit">Submit</button>
       </form>
-	  <hr/>
+	  
       <div>
         <Link to="/UserDisplay">
           <button className="btn-link">See results</button>
         </Link>
       </div>
     </div>
+	</div>
+	
   );
 }
 

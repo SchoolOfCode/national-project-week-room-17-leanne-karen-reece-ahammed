@@ -1,17 +1,18 @@
 .share {
-border: 5px black solid;
+background-color: rgba(112, 183, 126,0.5);
 margin : 20px;
-background-color : green
+ 
 }
 
 .outerbox{
-    background-color: blueviolet;
+    
     width: 50%;
     /*
     The height needs to be changed to ensure that
     the size doenst change on different resolutions.
     Maybe try and get % to work(?)
     */
-    height : 500px;
-    margin : 30px
+    height : auto;
+    margin : 30px;
+    border: 5px #00CECB solid;
 }

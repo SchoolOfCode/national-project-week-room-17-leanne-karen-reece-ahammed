@@ -1,5 +1,6 @@
 import DoughnutChart from "../doughnut/";
 import {useState} from "react";
+import "./index.css"
 function App() {
 
 const [happiness, setHappniess] = useState("");

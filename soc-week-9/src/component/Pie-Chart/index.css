@@ -1,0 +1,11 @@
+h1 {
+	font-family: 'Josefin Sans';
+	font-size: 20px;
+	padding: 20px;
+	width: 150px;
+	border-radius: 10px;
+	background-color: #7F96FF;
+	text-decoration: black;
+	margin-bottom: 10px;
+    text-align: center;
+}

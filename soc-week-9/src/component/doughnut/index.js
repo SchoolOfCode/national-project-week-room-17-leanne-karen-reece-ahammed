@@ -4,16 +4,16 @@ import "./index.css"
 export default function DoughnutChart({happinessData}) {
     console.log(happinessData)
     const data = {
-        labels: [ ":😓:", "😐", "😀"],
+        labels: [ "😟", "😐", "😀"],
         datasets: [
             {
                 label: "Happiness",
                 data: happinessData,
                 borderColor: [ "rgba(255,206,86,0.2)" ],
                 backgroundColor: [
-                    "rgba(255,0,0,1)",
-                    "rgba(251,201,98,1)",
-                    "rgba(128,255,0,1)",
+                    "rgba(137, 105, 120,1)",
+                    "rgba(153, 172, 255,1)",
+                    "rgba(170, 250, 200,1)",
                 ],
                 pointBackgroundColor: "rgba(255,206,86,0.2)"
             }
@@ -23,10 +23,11 @@ export default function DoughnutChart({happinessData}) {
         plugins: {
             title: {
                 display: true,
-                text: "Happy Doughnut",
+                text: "The Happy Doughnut",
                 color: "black",
                 font: {
-                    size: 30
+                    size: 50,
+                    family: 'Amatic SC',
                 },
                 padding: {
                     top: 30,

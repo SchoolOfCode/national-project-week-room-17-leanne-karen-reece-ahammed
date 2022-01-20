@@ -2,15 +2,33 @@
 	direction: column;
 	display : flex;
 	padding: 50px;
-	border: 1px solid black;
+	justify-content: center;
+	align-content: center;
+	border: 5px #00CECB solid;
+	margin: 50px;
 }
 
 .two-columns {
 	display : flex;
 	direction: row;
 	justify-content: space-evenly;
+	
 }
 
 .primary-container {
 	height: 100vh;
+	text-align: center;
+}
+
+.dounut {
+	padding-right: 500px ;
+}
+
+h3{
+	font-family: 'Amatic SC', cursive;
+	font-size: 50px;
+}
+
+h4 {
+	font-size: 30px;
 }

@@ -5,6 +5,7 @@ import WorkshopResults from '../WorkshopResults';
 import DailyReflection from '../Daily-reflection';
 import ShareYourWork from '../Share-your-work';
 import './index.css';
+import logo from "../SearchForm/SOClogo.png"
 // This page will contain all components to be displayed on the results page.
 // The UserDisplay will be imported into the main App.
 // This will help with styling & layout of the components.
@@ -14,7 +15,15 @@ import './index.css';
 function UserDisplay({reflect, sharedWork}) {
 	return (
 		<div className="primary-container">
-				<div className="row">
+				
+				<img
+        			src={logo}
+        			alt="school of code logo"
+        			style={{ width: "200px", height: "200px"}}
+      			/> 
+				  <h3>Let's see the thoughts and feelings of your fellow bootcampers...</h3>
+				  <h4>Here you can gage how others have found the day - anonymously!</h4>
+				  	<div className="row dounut">			
 					<PieChart />
 				</div>
 				<div className="row">

@@ -3,10 +3,10 @@ import React from 'react';
 function KeyTakeAways(props) {
 	return (
 		<div>
-			<p>Key Take Aways</p>
-			<ul><li>Hello</li>
-			<li>Goodbye</li>
-			<li>I cant think of anything else to say</li></ul>
+			<p style={{padding:"15px"}}className="jazzy-font share">Key Take Aways</p>
+			<ul><li>React is a Javascript library.</li>
+			<li>useState is a React hook which enables us to add state to function components.</li>
+			<li>You can only pass 'props' from parent to child.</li></ul>
 		</div>
 	);
 }

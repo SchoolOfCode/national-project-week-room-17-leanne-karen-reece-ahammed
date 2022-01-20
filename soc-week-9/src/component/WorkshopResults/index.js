@@ -33,8 +33,8 @@ function WorkshopResults(props) {
 		setPercent(percentArr);
 	}
 	return (<div>
-	<h1 onClick={getApi}>Workshop Results</h1>
-	<h2>{percent}</h2>
+	<p style={{padding:"15px 300px 15px 300px"}}className="jazzy-font share" onClick={getApi}>Workshop Results</p>
+	<li>{percent}</li>
 	</div>)
 }
 

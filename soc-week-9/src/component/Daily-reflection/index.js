@@ -10,7 +10,7 @@ function DailyReflection({reflect}) {
 	//["sdsds", "sdsdsd", "sdsd"]
 
 	return	<div className="outerbox_2">
-	 <div className="share_2">Daily Reflection
+	 <div className="share_2 jazzy-font">Daily Reflection
 	</div>
 	{reflect.map((item, key)=>{
 		return <DisplayItem reflect={item}/>
