@@ -65,14 +65,14 @@ function SearchForm() {
           <input
             onChange={(e) => setFeeling(parseInt(e.target.value))}
             type="range"
-            min="0"
-            max="2"
+            min="1"
+            max="3"
             value={feeling}
           />
           <div className="emoji-meter">
-            <option value="0">😟</option>
-            <option value="1">😐</option>
-            <option value="2">😀</option>
+            <option value="1">😟</option>
+            <option value="2">😐</option>
+            <option value="3">😀</option>
           </div>
         </div>
         <div className="form-box">
@@ -114,13 +114,13 @@ function SearchForm() {
             type="text"
           /> */}
         </div>
-		<button type="submit">Submit</button>
-		</form>
-		<div>
-        <Link to="/UserDisplay"> 
-        <button>See results</button>
+        <button type="submit">Submit</button>
+      </form>
+      <div>
+        <Link to="/UserDisplay">
+          <button>See results</button>
         </Link>
-		</div>
+      </div>
     </div>
   );
 }
