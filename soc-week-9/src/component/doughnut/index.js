@@ -1,7 +1,7 @@
 import { Doughnut } from "react-chartjs-2";
 import "chart.js/auto";
 import "./index.css"
-function DoughnutChart({}) {
+function DoughnutChart() {
     const data = {
         labels: [ ":grinning:", "Tue", "Wed", "Thurs", "Fri" ],
         datasets: [
