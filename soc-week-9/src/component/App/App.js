@@ -10,6 +10,7 @@ function App() {
 	useEffect(()=>{
 		getWork();
 		getReflection();
+		//eslint-disable-next-line
 	}, [])
 
 	const [reflect, setReflect] = useState([]);
