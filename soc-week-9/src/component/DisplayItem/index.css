@@ -1,0 +1,15 @@
+.item {
+    background-color: #d7f3ee;
+    text-align: center;
+    padding : 1em;
+    border-top-left-radius: 5cm;
+    border-bottom-right-radius: 5cm;
+}
+
+.itemOdd{
+    background-color: #a6e2d9;
+    text-align: center;
+    padding : 1em;
+    border-top-right-radius: 5cm;
+    border-bottom-left-radius: 5cm;
+}

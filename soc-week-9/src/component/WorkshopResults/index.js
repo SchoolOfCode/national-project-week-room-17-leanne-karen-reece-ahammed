@@ -1,5 +1,7 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import {useState} from "react"
+import WorkshopItem from '../WorkshopItem';
+import "./index.css";
 
 function WorkshopResults(props) {
 	const [percent, setPercent] = useState([]);
@@ -32,9 +34,21 @@ function WorkshopResults(props) {
 		})
 		setPercent(percentArr);
 	}
+
+	useEffect(()=>{
+		getApi();
+	}, [])
 	return (<div>
 	<p style={{padding:"15px 300px 15px 300px"}}className="jazzy-font share" onClick={getApi}>Workshop Results</p>
-	<li>{percent}</li>
+	<ul>{percent.map((item, key)=>{
+		return (
+			<div className='comp'>
+			<h3 className='numbers'>Option: {key + 1}</h3>
+			<WorkshopItem percent={item}/>
+			</div>
+
+			)
+	})}</ul>
 	</div>)
 }
 

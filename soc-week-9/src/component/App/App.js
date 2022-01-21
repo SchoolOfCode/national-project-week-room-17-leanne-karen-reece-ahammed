@@ -3,7 +3,7 @@ import NavBar from '../Nav-bar';
 import SearchForm from '../SearchForm';
 import UserDisplay from '../UserDisplay';
 import { Routes, Route } from 'react-router-dom';
-import {useState} from "react";
+import {useEffect, useState} from "react";
 
 function App() {
 
@@ -23,6 +23,7 @@ function App() {
 	console.log(sharedWork)
 	}
 
+
 	async function getReflection() {
 		const response = await fetch('https://soc-app-17.herokuapp.com/users');
 		const data = await response.json();
@@ -35,6 +36,10 @@ function App() {
 		setReflect(arr);
 
 	}
+	useEffect(()=>{
+		getWork();
+		getReflection();
+	}, [])
 	return (
 		<Routes>
 			<Route
@@ -51,10 +56,9 @@ function App() {
 				element={
 					<div>
 
-						<NavBar /><h5 onClick={getReflection}>GET REFLECTion</h5>
-						<h5 onClick={getWork}>GET THE WORK</h5>
+						<NavBar />
 						<UserDisplay reflect={reflect} sharedWork={sharedWork}/>
-						
+
 					</div>
 				}
 			/>

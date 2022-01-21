@@ -1,11 +1,11 @@
 .share {
 background-color: rgba(112, 183, 126,0.5);
 margin : 20px;
- 
+
 }
 
 .outerbox{
-    
+
     width: 50%;
     /*
     The height needs to be changed to ensure that
@@ -15,4 +15,5 @@ margin : 20px;
     height : auto;
     margin : 30px;
     border: 5px #00CECB solid;
+    border-radius: 1cm;
 }

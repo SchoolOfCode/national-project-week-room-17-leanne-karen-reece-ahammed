@@ -1,0 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&family=Ruslan+Display&family=Wendy+One&display=swap');
+
+.percent {
+    font-family: 'Wendy One', sans-serif;
+    background-color: rgb(100, 206, 206);
+    padding: .1cm;
+    font-size: 50px;
+    color: rgb(58, 77, 77);
+    border-radius: 50cm;
+    size: 1cm;
+}

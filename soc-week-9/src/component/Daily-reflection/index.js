@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import "./index.css";
 import DisplayItem from "../DisplayItem"
 
@@ -6,14 +6,16 @@ import DisplayItem from "../DisplayItem"
 
 function DailyReflection({reflect}) {
 	console.log(reflect);
-	//daily reflection
-	//["sdsds", "sdsdsd", "sdsd"]
 
 	return	<div className="outerbox_2">
 	 <div className="share_2 jazzy-font">Daily Reflection
 	</div>
 	{reflect.map((item, key)=>{
-		return <DisplayItem reflect={item}/>
+		return (
+			<div>
+		<DisplayItem reflect={item} index={key}/>
+		</div>
+		)
 	})}
 	</div>
 }
