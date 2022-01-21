@@ -15,7 +15,7 @@ function SearchForm() {
   async function postApi() {
     const response = await fetch("https://soc-app-17.herokuapp.com/users", {
       method: "POST", // *GET, POST, PUT, DELETE, etc.
-      mode: "cors", // no-cors, *cors, same-origin
+      mode: "no-cors", // no-cors, *cors, same-origin
       cache: "no-cache", // *default, no-cache, reload, force-cache, only-if-cached
       credentials: "same-origin", // include, *same-origin, omit
       headers: {
