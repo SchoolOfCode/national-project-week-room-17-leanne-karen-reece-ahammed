@@ -1,4 +1,3 @@
-import React, { useEffect } from 'react';
 import "./index.css";
 import DisplayItem from "../DisplayItem"
 
