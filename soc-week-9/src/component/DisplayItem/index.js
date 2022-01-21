@@ -5,9 +5,9 @@ function DisplayItem({reflect, index}){
 
     function oddNumber(key){
         if(key % 2 === 0){
-            return (<li className="item">{reflect}</li>)
+            return (<li className="item">"- {reflect}"</li>)
         }else{
-            return (<li className="itemOdd">{reflect}</li>)
+            return (<li className="itemOdd">"- {reflect}"</li>)
         }
     }
 
@@ -16,5 +16,4 @@ function DisplayItem({reflect, index}){
 </div>
 )
         }
-
 export default DisplayItem;
