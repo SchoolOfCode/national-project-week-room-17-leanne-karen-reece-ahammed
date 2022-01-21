@@ -101,8 +101,8 @@ function SearchForm() {
         <div className="form-box">
           <label>Share Your Work</label>
           <input
-            className="box-height" onChange={(e) => setUrl(e.target.value)}
-
+            className="box-height_1" onChange={(e) => setUrl(e.target.value)}
+            placeholder="Put a link here to your repos"
             type="text"
             value={url}
           />

@@ -1,16 +1,11 @@
-.numbers{
-    background-color: rgb(122, 175, 255);
-    padding-top: .2em;
-    border-top-right-radius: 1.5cm;
-    border-top-left-radius: 1.5cm;
+.option{
+    border-radius: 50px;
     align-self: flex-end;
+    padding-bottom: -30px;
+    background-color: rgb(68, 129, 129);
+    color: white;
 }
 
-.comp{
-    background-color: rgb(220, 224, 228);
-    border-color: rgb(0, 0, 0);
-    border-style: solid;
-    margin: 2cm;
-    border-radius: 50cm;
+.option:hover {
+    background-color: aqua;
 }
-

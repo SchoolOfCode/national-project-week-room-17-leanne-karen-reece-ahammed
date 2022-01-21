@@ -42,11 +42,12 @@ function WorkshopResults(props) {
 	<p style={{padding:"15px 300px 15px 300px"}}className="jazzy-font share" onClick={getApi}>Workshop Results</p>
 	<ul>{percent.map((item, key)=>{
 		return (
+			<div>
+			<h3 className='option'>Option: {key + 1}</h3>
 			<div className='comp'>
-			<h3 className='numbers'>Option: {key + 1}</h3>
-			<WorkshopItem percent={item}/>
 			</div>
-
+			<WorkshopItem percent={item} className="componentpercent"/>
+			</div>
 			)
 	})}</ul>
 	</div>)

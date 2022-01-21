@@ -32,6 +32,8 @@
 	margin-top: 8px;
 	font-size: 17px;
 	border: none;
+	border-radius: 50cm;
+	margin-right : 5px;
 }
 
 .topnav .search-container button {
@@ -43,6 +45,7 @@
 	font-size: 17px;
 	border: none;
 	cursor: pointer;
+	border-radius: 50cm;
 }
 
 .topnav .search-container button:hover {
@@ -84,10 +87,10 @@
 	border-radius: 10px;
 	background-color: #7F96FF;
 	text-decoration: black;
-	
+
 }
 
 .homeButton {
-	font-family: 'Josefin Sans';	
+	font-family: 'Josefin Sans';
 	font-size: 25px;
 }

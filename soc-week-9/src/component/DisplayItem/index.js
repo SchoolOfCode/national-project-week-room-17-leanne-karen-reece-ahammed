@@ -13,6 +13,7 @@ function DisplayItem({reflect, index}){
 
     return  (<div>
         {oddNumber(index)}
+        <p>11.22</p>
 </div>
 )
         }

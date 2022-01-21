@@ -2,10 +2,12 @@
 
 .percent {
     font-family: 'Wendy One', sans-serif;
-    background-color: rgb(100, 206, 206);
-    padding: .1cm;
     font-size: 50px;
     color: rgb(58, 77, 77);
     border-radius: 50cm;
-    size: 1cm;
+    text-align: center;
+    padding-top: 1px;
+    border-color: .1cm solid ;
+    background-color: rgb(82, 170, 170);
+    color: rgb(255, 255, 255);
 }
