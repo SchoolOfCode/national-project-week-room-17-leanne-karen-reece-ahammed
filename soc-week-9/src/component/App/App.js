@@ -7,6 +7,10 @@ import {useEffect, useState} from "react";
 
 function App() {
 
+	useEffect(()=>{
+		getWork();
+		getReflection();
+	}, [])
 
 	const [reflect, setReflect] = useState([]);
 	const [sharedWork, setSharedWork] = useState([]);
@@ -36,10 +40,7 @@ function App() {
 		setReflect(arr);
 
 	}
-	useEffect(()=>{
-		getWork();
-		getReflection();
-	}, [])
+
 	return (
 		<Routes>
 			<Route
