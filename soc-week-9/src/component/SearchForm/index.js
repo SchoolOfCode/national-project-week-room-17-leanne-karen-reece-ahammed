@@ -13,7 +13,7 @@ function SearchForm() {
   // name,feeling, reflection, workshop, url
 
   async function postApi() {
-    const response = await fetch("http://localhost:5000/users", {
+    const response = await fetch("https://soc-app-17.herokuapp.com/users", {
       method: "POST", // *GET, POST, PUT, DELETE, etc.
       mode: "cors", // no-cors, *cors, same-origin
       cache: "no-cache", // *default, no-cache, reload, force-cache, only-if-cached
@@ -100,9 +100,9 @@ function SearchForm() {
         </div>
         <div className="form-box">
           <label>Share Your Work</label>
-          <input 
+          <input
             className="box-height" onChange={(e) => setUrl(e.target.value)}
-           
+
             type="text"
             value={url}
           />
@@ -114,7 +114,7 @@ function SearchForm() {
         </div>
         <button className="submit-btn" type="submit">Submit</button>
       </form>
-	  
+
       <div>
         <Link to="/UserDisplay">
           <button className="btn-link">See results</button>
@@ -122,7 +122,7 @@ function SearchForm() {
       </div>
     </div>
 	</div>
-	
+
   );
 }
 
